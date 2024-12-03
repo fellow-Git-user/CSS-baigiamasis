@@ -1,0 +1,116 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Avenir Next;
+  src: url(/Fonts/AvenirNextLTPro-Regular.otf);
+}
+body {
+  font-family: Avenir Next, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+nav {
+  background: linear-gradient(#F4E9E2, #FAF1EC);
+  height: 128px;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+nav .logo-container {
+  padding-left: 130px;
+  display: inline-block;
+  padding-top: 35px;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+@media (min-width: 900px) {
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #F4E9E2;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+}
+nav ul li {
+  display: inline-block;
+  line-height: 90px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: #333333;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 7px 24px;
+}
+nav ul li a:a:hover {
+  color: #66AC66;
+  transition: 0.5s;
+}
+nav .checkbtn {
+  font-size: 30px;
+  color: #222B45;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+@media (min-width: 900px) {
+  nav .checkbtn .checkbtn {
+    display: block;
+  }
+}
+nav #check {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .checkbtn {
+    display: block;
+  }
+}
+@media (max-width: 950px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #F4E9E2;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover {
+    background: none;
+    color: #66AC66;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
