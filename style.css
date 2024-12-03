@@ -190,4 +190,10 @@ nav #check:checked ~ ul {
 }
 .intro p {
   max-width: 70%;
+}
+.intro svg {
+  width: 50%;
+  position: relative;
+  left: 264px;
+  top: -380px;
 }/*# sourceMappingURL=style.css.map */
