@@ -1,0 +1,82 @@
+@use 'responsive';
+@use 'colors';
+@use 'base';
+
+.fifth-section{
+    margin-bottom: 64px;
+    
+    .wrap{
+        margin-left: 32px;
+        .grid-container{
+            display: flex;
+            flex-direction: row;
+            gap: 26px;
+            .h2-h3-wrapper{
+
+                h2{
+
+                }
+
+                h3{
+                    font-size: 22px;
+                    margin-right: 55px;
+                }
+            }
+            .img-name-description-container{
+                display: grid;
+                grid-template-rows: repeat(2, 0.5fr);
+                grid-template-columns: repeat(2, 1fr);
+
+                background: rgb(100,123,100);
+                background: linear-gradient(0deg, rgba(100,123,100,0.66) 0%, rgba(252,247,240,0) 66%, rgba(253,250,246,0) 100%);
+                overflow: hidden;
+                .img-name-container{
+                    img{
+                        width: 100%;
+                    }    
+                }
+
+                .brand-name-container{
+                    padding-top: 10px;
+                    grid-column-end: span 1;
+                    .brand{
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        .bigger-font-size{
+                            font-size: 12px;
+                        }
+                    }
+                    .name{
+                        font-size: 8px;
+                        text-transform: uppercase;
+                        .first-name-letter{
+                            font-size: 10px;
+                        }
+                    }
+                }
+
+                .clothes-description{
+                    font-size: 12px;
+                    font-style: italic;
+                    grid-column-end: span 2;
+                } 
+            }
+            .first-card-container{
+                width: 80%;
+            }
+            .second-card-container{
+                width: 80%;
+                object-fit: contain;
+                object-position: right;
+                transform: translateX(70%); /* Shift the container to the left */
+                overflow: hidden;
+                
+            }
+
+            .third-card-container{
+                display: none;
+            }
+        }
+    }    
+}

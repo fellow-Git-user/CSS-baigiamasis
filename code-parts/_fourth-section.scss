@@ -1,0 +1,41 @@
+@use 'responsive';
+@use 'colors';
+@use 'base';
+
+.fourth-section{
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 57.4px;
+    justify-content: right;
+    
+    .h2-h3-wrapper{
+        margin-right: 140px;
+        padding-left: 32px;
+        
+        h2{
+            padding: 10px 0px 5px;
+            margin: 0px;
+        }
+        h3{
+            padding-bottom: 10px;
+            margin: 0px;
+        }
+        
+    }
+
+    p{
+        margin-top: 16px;
+        margin-left: 32px;
+        margin-right: 85px;
+    }
+    .get-started-button{
+        margin-top: 17px;
+        margin-left: 32px;
+        background: rgb(100, 123, 100);
+        background: linear-gradient(121deg, rgba(100, 123, 100, 1) 0%, rgba(102, 172, 102, 1) 100%);
+
+    }
+
+}

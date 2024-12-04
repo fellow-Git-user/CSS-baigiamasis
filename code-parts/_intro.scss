@@ -1,0 +1,25 @@
+@use 'responsive';
+@use 'colors';
+@use 'base';
+
+.intro{
+    .wrap{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-right: 0px;
+        padding-left: 32px;
+        .content-box{
+            width: 70%;
+        }
+        .img-container{
+            width: 30%;
+            img{
+                width: 100%;
+                height: 376px;
+                object-fit: cover;
+                object-position: left;
+            }
+        }
+    }   
+}  

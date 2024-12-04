@@ -1,0 +1,152 @@
+@use 'responsive';
+@use 'colors';
+@use 'base';
+
+nav{
+    background: transparent;
+    height: 128px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .logo-container{
+        
+        display: inline-block;
+        padding-top: 35px;
+        
+        svg{
+            &:nth-of-type(2){
+            position: relative;
+            top: -17px;
+            }
+        }
+
+        @include responsive.xl{
+        padding-left: 130px;
+        display: inline-block;
+        padding-top: 35px;
+        }
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #F4E9E2;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+        @include responsive.lg{
+        position: static;
+        width: auto;
+        height: auto;
+        float: right;
+        // margin-right: 20px;
+        background-color: transparent;
+        text-align: right;
+            
+        }
+
+        // @include responsive.xl{
+        // position: static;
+        // width: auto;
+        // height: auto;
+        // float: right;
+        // margin-right: 20px;
+        // background-color: transparent;
+        // text-align: right;
+            
+        // }
+        
+        li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+
+            @include responsive.lg{
+            display: inline-block;
+            line-height: 90px;
+            margin: 0 5px;
+            &:last-of-type{
+                background: rgb(100, 123, 100);
+                background: linear-gradient(121deg, rgba(100, 123, 100, 1) 0%, rgba(102, 172, 102, 1) 100%);
+                color: white;
+                padding: 15px 10px;
+                line-height: 0px;
+                border-radius: 2px;
+            }
+            }
+
+            a{
+                color: #66AC66;
+                font-size: 20px;
+
+                &:hover{
+                    background: none;
+                    color: rebeccapurple;
+                    @include responsive.lg{
+                    color: red;
+                    transition: .5s;
+                    }
+                }
+                
+                @include responsive.lg{
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    padding: 7px 12px;
+                    color: #333333;
+
+                    &:first-letter{
+                    font-size: 18px;
+                    color: rebeccapurple;
+                    }
+                    &:last-of-type{
+                        // padding-right: 0px;
+                        
+                    }
+                }
+                 @include responsive.xl{
+                    padding: 7px 24px;
+
+                    &:last-of-type{
+                        // padding-right: 0px;
+                        
+                    }
+                    
+                }
+
+                
+            }
+        }
+
+    }
+
+    .checkbtn{
+        font-size: 30px;
+        color: #222B45;
+        float: right;
+        line-height: 123px;
+        margin-right: 0px;
+        cursor: pointer;
+        display: block;
+        
+
+        @include responsive.lg{
+        display: none;
+        }
+    }
+
+    #check{
+        display: none;
+        &:checked ~ ul{
+            left: 0;
+        }
+        @include responsive.lg{
+            display: none;
+        }
+    }
+
+
+}

@@ -1,0 +1,91 @@
+@use 'responsive';
+@use 'colors';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Avenir Next,;
+    src: url(/Fonts/AvenirNextLTPro-Regular.otf);
+}
+
+body{
+    font-family: Avenir Next, Verdana, sans-serif;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(252,247,240,1) 100%);    
+    
+}
+
+body, html{
+    overflow-x: hidden;
+}
+
+.container{
+    // margin-top: 50px;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    // padding-left: 20px;
+    // padding-right: 20px;
+}
+
+h1{
+    font-size: 24px;
+    color: #333333;
+    text-align: left;
+}
+
+h2{
+    font-size: 13px;
+    color: colors.$h2;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 20px;
+    color: colors.$h3;
+    text-transform: uppercase;
+}
+
+p{
+    color: colors.$p-text-color;
+    font-size: 10px;
+    text-align-last: left;
+}
+
+// .content-wrap{
+//     margin-left: 140px;
+//     margin-right: 140px;
+// }
+
+// .wrap{
+//     // padding: 0px 32px;
+// }
+
+.get-started-button{
+    position: relative;
+    z-index: -10;
+    display: block;
+    max-width: 175px;
+    color: white;
+    text-transform: uppercase;
+    background: rgb(100, 123, 100);
+    background: linear-gradient(121deg, rgba(100, 123, 100, 1) 0%, rgba(102, 172, 102, 1) 100%);
+    font-size: 11px;
+    font-weight: bold;
+    padding: 15px 10px 10px;
+    border-radius: 3px;
+    &::after{
+        content: "";
+        background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M11.3827%203.57672L7.96713%200.158701C7.90131%200.107427%207.81908%200.0820071%207.73588%200.087215C7.65268%200.0924228%207.57424%200.127901%207.5153%200.186984C7.45635%200.246067%207.42096%200.32469%207.41576%200.408083C7.41057%200.491477%207.43593%200.573903%207.48708%200.639878L10.3177%203.47717H0.788396C0.697664%203.47717%200.610648%203.51329%200.54649%203.5776C0.482332%203.64191%200.446289%203.72913%200.446289%203.82007C0.446289%203.91102%200.482332%203.99824%200.54649%204.06255C0.610648%204.12685%200.697664%204.16298%200.788396%204.16298H10.3122L7.48708%206.99474C7.44877%207.02458%207.41723%207.06225%207.39456%207.10525C7.37188%207.14824%207.35859%207.19558%207.35557%207.24412C7.35254%207.29266%207.35986%207.34129%207.37702%207.38678C7.39418%207.43227%207.4208%207.47358%207.4551%207.50797C7.48941%207.54236%207.53063%207.56904%207.57601%207.58624C7.62139%207.60344%207.66991%207.61077%207.71833%207.60774C7.76676%207.6047%207.81399%207.59138%207.85688%207.56866C7.89978%207.54593%207.93736%207.51432%207.96713%207.47592L11.3827%204.05237C11.4441%203.98847%2011.4783%203.90323%2011.4783%203.81454C11.4783%203.72585%2011.4441%203.64061%2011.3827%203.57672Z%22%20fill%3D%22%23FEFEFE%22/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: -20;
+        width: 50%;
+        height: 50%;
+        background-size: 50% 50%;
+        background-position: 57px 1px;
+    }
+}
