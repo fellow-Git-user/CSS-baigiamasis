@@ -462,7 +462,7 @@ nav{
 }
 
 .fifth-section{
-    
+    margin-bottom: 64px;
     
     .wrap{
         margin-left: 32px;
@@ -540,6 +540,101 @@ nav{
     }    
 }
 
+footer{
+    background-color: colors.$footer;
+    .wrap{
+        padding: 40px 60px 40px 32px;
+        
+       .about-container{
+            .logo-container{
+                display: inline-block;
+                svg{
+                    &:nth-of-type(2) {
+                    position: relative;
+                    top: -17px;
+                    }
+                }
+            }   
+            
+            p{
+                font-size: 14px;
+                text-align: left;
+            }
+            .socials-container{
+                margin-bottom: 40px;
+                
+                img{
+                    width: 32px;
+                    height: 32px;
+                    margin-right: 16px;
+                }
+            }
+        }
+            
+        
+       .company-support-container{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+            .company{
+                width: 50%;
+                span{ 
+                    font-size: 20px;
+                    color: colors.$h3
+                }
+                ul{
+                    padding-left: 0px;
+                    li{
+                        font-size: 16px;
+                        padding-bottom: 12px;
+                        
+                    }
+                }
+            }
+            .support{
+                width: 50%;
+                span{
+                    font-size: 20px;
+                    color: colors.$h3
+                }
+                ul{
+                    padding-left: 0px;
+                    li{
+                        font-size: 16px;
+                        padding-bottom: 12px;
+                    }
+                }
+            }
+        }
 
+       
+        .send-message-container{
+            position: relative;
+            z-index: 20;
+            .send-msg{
+                font-size: 20px;
+                color: colors.$h3;
+                text-transform: uppercase;
+                
+            }
+            #email{
+                border: none;
+                width: 283px;
+                height: 113px;
+                margin-top:  13px;
+                margin-bottom: 28px;
+            }
+            .get-started-button{
+                max-width: none;
+                width: 283px;
+                &:after{
+                    background-position: 97px 1px;
+                }
+            }    
+        }
+       
+    }
+    
+}
 
 

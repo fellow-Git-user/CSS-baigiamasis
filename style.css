@@ -372,6 +372,9 @@ nav #check:checked ~ ul {
   background: linear-gradient(121deg, rgb(100, 123, 100) 0%, rgb(102, 172, 102) 100%);
 }
 
+.fifth-section {
+  margin-bottom: 64px;
+}
 .fifth-section .wrap {
   margin-left: 32px;
 }
@@ -433,4 +436,86 @@ nav #check:checked ~ ul {
 }
 .fifth-section .wrap .grid-container .third-card-container {
   display: none;
+}
+
+footer {
+  background-color: #F0DCC5;
+}
+footer .wrap {
+  padding: 40px 60px 40px 32px;
+}
+footer .wrap .about-container .logo-container {
+  display: inline-block;
+}
+footer .wrap .about-container .logo-container svg:nth-of-type(2) {
+  position: relative;
+  top: -17px;
+}
+footer .wrap .about-container p {
+  font-size: 14px;
+  text-align: left;
+}
+footer .wrap .about-container .socials-container {
+  margin-bottom: 40px;
+}
+footer .wrap .about-container .socials-container img {
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+}
+footer .wrap .company-support-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+footer .wrap .company-support-container .company {
+  width: 50%;
+}
+footer .wrap .company-support-container .company span {
+  font-size: 20px;
+  color: #647B64;
+}
+footer .wrap .company-support-container .company ul {
+  padding-left: 0px;
+}
+footer .wrap .company-support-container .company ul li {
+  font-size: 16px;
+  padding-bottom: 12px;
+}
+footer .wrap .company-support-container .support {
+  width: 50%;
+}
+footer .wrap .company-support-container .support span {
+  font-size: 20px;
+  color: #647B64;
+}
+footer .wrap .company-support-container .support ul {
+  padding-left: 0px;
+}
+footer .wrap .company-support-container .support ul li {
+  font-size: 16px;
+  padding-bottom: 12px;
+}
+footer .wrap .send-message-container {
+  position: relative;
+  z-index: 20;
+}
+footer .wrap .send-message-container .send-msg {
+  font-size: 20px;
+  color: #647B64;
+  text-transform: uppercase;
+}
+footer .wrap .send-message-container #email {
+  border: none;
+  width: 283px;
+  height: 113px;
+  margin-top: 13px;
+  margin-bottom: 28px;
+}
+footer .wrap .send-message-container .get-started-button {
+  max-width: none;
+  width: 283px;
+}
+footer .wrap .send-message-container .get-started-button:after {
+  background-position: 97px 1px;
 }/*# sourceMappingURL=style.css.map */
