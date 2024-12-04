@@ -14,7 +14,8 @@
 
 body{
     font-family: Avenir Next, Verdana, sans-serif;
-    background-color: colors.$bc;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(252,247,240,1) 100%);    
     
 }
 
@@ -90,7 +91,7 @@ p{
 }
 
 nav{
-    background: linear-gradient(#F4E9E2, #FAF1EC);
+    background: transparent;
     height: 128px;
     width: 100%;
     padding-left: 30px;
@@ -261,9 +262,10 @@ nav{
     
 
 .second-section{
-    background-color: colors.$white;
+    background-color: transparent;
     margin-left: 0px;
     margin-top: 50px;
+    margin-bottom: 57.4px;
     
     .h2-h3-wrapper{
         background: rgb(239,128,49);
@@ -340,6 +342,83 @@ nav{
             }
         }
     }        
+}
+
+.third-section{
+    background-color: colors.$white;
+    
+    .headings-wrapper{
+        text-align: center;
+        h2{
+            margin-bottom: 10px;
+        }
+        h3{
+            margin-top: 0px;
+            margin-bottom: 16.5px;
+        }
+    }
+    .wrap{
+        margin-left: 47px;
+        display: flex;
+        gap: 17.45px;
+        justify-content: flex-end;
+        
+        
+        .inner-box{
+            background-color: azure;
+            padding: 34px 21.82px 31.5px;
+            width: 50%;
+            border-radius: 3.49px;
+            .services-img-container{
+
+            }
+            .card-heading{
+                font-size: 10px;
+                text-transform: uppercase;
+                span{
+                    font-size: 14px;
+                }
+            }
+            .card-description{
+                margin-top: 2.62px;
+                font-size: 8px;
+            }
+        }
+
+        .first-inner-box{
+            background: rgb(100,123,100);
+            background: linear-gradient(0deg, rgba(100,123,100,0.77) 0%, rgba(100,123,100,0) 66%, rgba(100,123,100,0) 100%);
+            // NESIGAVO
+            // &::after{
+            //     content: "";
+            //     background-image: url(Dots.png);
+            //     background-repeat: no-repeat;
+            //     position: absolute;
+            //     z-index: -10;
+            //     width: 50%;
+            //     height: 50%;
+            //     background-size: 100% 100%;
+            //     /* background-position: -70px -36px; */
+            //     outline: 1px solid red;
+            //     top: 84px;
+            //     left: -13px;
+
+            // }
+        }
+
+        .second-inner-box{
+            background-color: colors.$h3;
+            color: colors.$white;
+            .card-description{
+                color: colors.$white;
+            }
+        }
+
+        .third-inner-box{
+            display: none;
+        }
+        
+    }
 }
 
 
